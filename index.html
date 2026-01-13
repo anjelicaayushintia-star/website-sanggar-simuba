@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanggar Simuba</title>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanggar Simuba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(180deg, #6b4a2f, #e7c9a5);
+            color: #fff;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        .navbar {
+            background: linear-gradient(90deg, #5a3a22, #8b5e3c);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        h3 {
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .opening {
+            background: url(https://i.pinimg.com/736x/c2/fb/90/c2fb90efd31468f469dee24166a69b57.jpg) center/cover no-repeat;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 250px 20px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 80px;
+            width: 100%;
+        }
+
+        .opening h1,
+        .opening p {
+            color: #fff;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+        }
+
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .section-box {
+            background: linear-gradient(180deg, #f2d7b6, #e6c29b);
+            border-radius: 10px;
+            padding: 20px;
+            color: #5a3a1a;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        \  .carousel img {
+            border-radius: 18px;
+        }
+
+        .product-img {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .faq-item {
+            margin-bottom: 16px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .faq-question {
+            background:#f2d7b6;
+            padding: 18px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #1a1a1a;
+            border-bottom: 1px solid #f2d7b6;
+            border-radius: 12px;
+            transition:background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #fee8cd;
+        }
+
+        footer {
+            background: linear-gradient(180deg, #7a4f2a, #4a2e15);
+        }
+
+        footer hr {
+            opacity: 0.25;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/fd/52/64/fd52644e95acba09438058285fad2544.jpg"
+                    alt="Logo Toko">
+            </div>
+            <a class="navbar-brand fw-bold" href="#">Sanggar Simuba</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#deskripsi">Deskripsi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#unit">Unit Kelas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#persyaratan">Persyaratan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="opening" id="home">
+        <h1
+            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            <strong>WELCOME TO SANGGAR SIMUBA</strong>
+        </h1>
+    </section>
+
+    <section class="my-5" id="deskripsi">
+        <h3 class="section-title">Deskripsi</h3>
+        <div class="container">
+            <div class="section-box text-center">
+                <p>
+                    Sanggar Simuba merupakan wadah pelestarian dan pengembangan seni budaya tradisional khas Jawa Timur, khususnya kesenian Reog Ponorogo. Sanggar ini berfokus pada pembinaan generasi muda agar mengenal, mencintai, dan mampu menampilkan kesenian Reog secara autentik sesuai dengan pakem budaya yang diwariskan secara turun-temurun.
+                    Melalui kegiatan latihan rutin, sanggar ini mengajarkan berbagai unsur Reog Ponorogo, seperti tari Jathil, Bujang Ganong, Warok, Klono Sewandono, hingga teknik dasar pembawaan Dadak Merak serta Karawitan. Selain keterampilan menari, peserta juga dibekali pemahaman nilai filosofis, disiplin, kerja sama, dan rasa tanggung jawab dalam setiap pementasan.
+                    Sanggar Tari Reog Ponorogo menanamkan nilai wiraga melalui ketepatan gerak tubuh, wirama lewat keselarasan gerak dengan iringan musik, serta wirasa melalui penghayatan dan ekspresi yang kuat dalam setiap pementasan.
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5" id="unit">
+        <h3 class="section-title">Unit Kelas</h3>
+        <div class="container">
+            <div class="row g-4 text-center">
+
+                <div class="col-md-4">
+                    <div class="section-box">
+                        <img src="https://i.pinimg.com/736x/35/97/ab/3597abf3190c8e23dbd746a4c64dc7e0.jpg"
+                            class="rounded-circle product-img mb-3">
+                        <h5><strong>Tari Warok</strong></h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="section-box">
+                        <img src="https://i.pinimg.com/736x/4e/44/93/4e449376c5ea9a4152c67e1106e8b4ca.jpg"
+                            class="rounded-circle product-img mb-3">
+                        <h5><strong>Jathil</strong></h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="section-box">
+                        <img src="https://i.pinimg.com/736x/0f/a2/be/0fa2be0a008e879454513202912a71b8.jpg"
+                            class="rounded-circle product-img mb-3">
+                        <h5><strong>Klono Sewandono</strong></h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="section-box">
+                        <img src="https://i.pinimg.com/736x/f6/c0/6b/f6c06b4694e6e085ec4073216c8f97a7.jpg"
+                            class="rounded-circle product-img mb-3">
+                        <h5><strong>Bujang Ganong</strong></h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="section-box">
+                        <img src="https://i.pinimg.com/1200x/c9/cf/7f/c9cf7f978adb7e75d20b6e209ae63d3b.jpg"
+                            class="rounded-circle product-img mb-3">
+                        <h5><strong>Dadak Merak</strong></h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="section-box">
+                        <img src="https://i.pinimg.com/736x/f0/9f/4e/f09f4eb71703ed9f7947c1cf70800df9.jpg"
+                            class="rounded-circle product-img mb-3">
+                        <h5><strong>Karawitan</strong></h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5" id="persyaratan">
+        <h3 class="section-title">Persyaratan Pendaftaran</h3>
+        <div class="container">
+            <div class="section-box text-center">
+                <ul>
+                   <li>Minimal Usia 7 Tahun</li> 
+                   <li>Pas Photo 4x6</li>
+                   <li>Foto Copy Kartu Keluarga</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5" id="faq">
+    <h3 class="section-title">FAQ</h3>
+    <div class="container">
+
+      <div class="faq-item" data-aos="fade-up">
+        <div class="faq-question">Kapan Jadwal latihannya?</div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-question">Fasilitas Apa Saja Yang Didapatkan Dari Sanggar?</div>
+        </div>
+    </section>
+
+    <section class="my-5" id="kontak">
+        <h3 class="section-title">Kontak</h3>
+        <div class="container">
+            <div class="section-box text-center">
+                <p class="mb-1">📞 +62 812232406090</p>
+                <p class="mb-1">📘 Instagram:Sanggarsimuba </p>
+                <p>📍 Jl. Kenangan No.24, Jawa Timur 23249</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center text-white py-4">
+        <small>“Menguasai Wiraga Wirama Wirasa”</small>
+    </footer>
+</body>
+
+</html>
